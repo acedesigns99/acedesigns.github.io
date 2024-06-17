@@ -1,0 +1,21 @@
+C:/Program Files/Krita (x64)/bin/ffmpeg.exe -hide_banner -y -y -r 24 -start_number 0 -start_number_range 1 -i C:/Users/arrob/Documents/website/frame%04d.png -vf scale=w=670:h=374:flags=bicubic -c:v libopenh264 -b:v 5000k C:/Users/arrob/Documents/website/orange_logo.mkv
+=====================================================
+Input #0, image2, from 'C:/Users/arrob/Documents/website/frame%04d.png':
+  Duration: 00:00:05.24, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc), 669x373 [SAR 2834:2834 DAR 669:373], 25 fps, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libopenh264))
+Press [q] to stop, [?] for help
+[libopenh264 @ 0000026307370080] Slice count will be set automatically
+[libopenh264 @ 0000026307370080] [OpenH264] this = 0x0000026307A7E920, Warning:SliceArgumentValidationFixedSliceMode(), unsupported setting with Resolution and uiSliceNum combination under RC on! So uiSliceNum is changed to 6!
+[libopenh264 @ 0000026307370080] [OpenH264] this = 0x0000026307A7E920, Warning:bEnableFrameSkip = 0,bitrate can't be controlled for RC_QUALITY_MODE,RC_BITRATE_MODE and RC_TIMESTAMP_MODE without enabling skip frame.
+Output #0, matroska, to 'C:/Users/arrob/Documents/website/orange_logo.mkv':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: h264 (H264 / 0x34363248), yuv420p(tv, progressive), 670x374 [SAR 125103:124955 DAR 669:373], q=2-31, 5000 kb/s, 24 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc58.134.100 libopenh264
+    Side data:
+      cpb: bitrate max/min/avg: 5000000/0/5000000 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=-0.0 size=       1kB time=00:00:00.00 bitrate=4936.0kbits/s speed=0.0988x    frame=   71 fps=0.0 q=-0.0 size=       1kB time=00:00:02.91 bitrate=   1.7kbits/s speed= 5.7x    frame=  131 fps=0.0 q=-0.0 Lsize=     254kB time=00:00:05.41 bitrate= 383.9kbits/s speed=6.36x    
+video:252kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.616892%
